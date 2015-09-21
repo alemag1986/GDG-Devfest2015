@@ -65,63 +65,56 @@
         <div id="pricetable" class="container wrap relative layout vertical text-center">
             <h4 class="heading">Tickets</h4>
             <div class="price-block-wrapper flex layout vertical-horizontal">
+               <!--  <div class="price-block flex text-center">
+                    <span class="ticket-name block">Estudiante</span>
+                    <span class="price">15</span>
+                    <span class="currency">US$</span>
+                    <span class="additional-info block">Antes del 30 de Setiembre o primeros 50 tickets.
+                        <br/>Requiere carnet o comprobante de estudiante.</span>
+                </div> -->
                 <div class="price-block flex text-center">
-                    <span class="ticket-name block">Student</span>
-                    <span class="price">400</span>
-                    <span class="currency">UAH</span>
-                    <span class="additional-info block">*Before October 23 or 100 tickets.
-                        <br/>Requires valid student ID</span>
+                    <span class="ticket-name block">Ticket</span>
+                    <span class="price">LIBRE</span>
+                    <!-- <span class="currency">US$</span> -->
+                    <span class="additional-info block">Tenes tiempo de registrarte hasta el 15 de Octubre.</span>
                 </div>
-                <div class="price-block flex text-center">
-                    <span class="ticket-name block">Early Bird</span>
-                    <span class="price">600</span>
-                    <span class="currency">UAH</span>
-                    <span class="additional-info block">*Before September 27 or 150 tickets</span>
-                </div>
-                <div class="price-block flex text-center">
-                    <span class="ticket-name block">Lazy Bird</span>
-                    <span class="price">800</span>
-                    <span class="currency">UAH</span>
-                    <span class="additional-info block">*Before October 23</span>
-                </div>
+                <!-- <div class="price-block flex text-center">
+                    <span class="ticket-name block">Lazy Ticket</span>
+                    <span class="price">30</span>
+                    <span class="currency">US$</span>
+                    <span class="additional-info block">*Después del 30 de Setiembre</span>
+                </div> -->
             </div>
-            <span class="details">Tickets grant access to all conference sections, coffee breaks, lunch and party. Accommodation is NOT included in the ticket price.</span>
+            <span class="details">El Ticket garantiza el accesso a todas las charlas de la conferencia y los coffee breaks. </span>
             <div class="flex">
-                <paper-button class="white border-button open-dialog-button" on-tap="openTicketsDialog">Buy a ticket</paper-button>
+                <paper-button class="white border-button open-dialog-button" on-tap="openTicketsDialog">Registrate</paper-button>
             </div>
         </div>
-        <paper-dialog id="ticketsDialog" entry-animation="scale-up-animation" exit-animation="fade-out-animation" modal>
+        <!-- <paper-dialog id="ticketsDialog" entry-animation="scale-up-animation" exit-animation="fade-out-animation" modal>
                 <div id="2event_tickets_widget" style="width: 640px; height: 300px; background:#fff;"></div>
             <div class="buttons">
-                <a href="http://2event.com/events/312113" target="_blank">
+                <a href="#" target="_blank">
                     <paper-button>Buy on the website</paper-button>
                 </a>
                 <paper-button dialog-confirm>Close</paper-button>
             </div>
-        </paper-dialog>
+        </paper-dialog> -->
     </template>
 </dom-module>
 <script>
     /* jshint ignore:start */
-    var widgetOptions = {
-        bg_color: 'ffffff',
-        id: 312113,
-        lang: 'en'
-    };
+    // var widgetOptions = {
+    //     bg_color: 'ffffff',
+    //     id: 312113,
+    //     lang: 'en'
+    // };
     /* jshint ignore:end */
-    (function() {
-        var script = document.createElement('script');
-        script.type = 'text/javascript';
-        script.async = true;
-        script.src = 'http://2event.com/js/widget-tickets.js';
-        document.getElementsByTagName('head')[0].appendChild(script);
-    })();
 
     Polymer({
         is: 'tickets-block',
-        openTicketsDialog: function() {
-            ga('send', 'buy-a-ticket', 'button', 'click'); // jshint ignore:line
-            this.$.ticketsDialog.open();
-        }
+        // openTicketsDialog: function() {
+        //     ga('send', 'buy-a-ticket', 'button', 'click'); // jshint ignore:line
+        //     this.$.ticketsDialog.open();
+        // }
     });
 </script>

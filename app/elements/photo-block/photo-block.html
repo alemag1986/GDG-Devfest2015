@@ -3,6 +3,7 @@
     <style>
     :host {
         display: block;
+        background: var(--default-primary-color);
     }
 
     .photo-wrapper {
@@ -32,6 +33,15 @@
         transition: opacity .3s;
     }
 
+     .text,
+    .border-button-link {
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        color: #fff;
+        font-size: 24px;
+        font-weight: 100;
+    }
+
     .open-photos:hover {
         opacity: 1;
     }
@@ -40,35 +50,42 @@
         .photo-wrapper {
             height: 500px;
         }
+        .text {
+            font-size: 20px;
+            text-align: left;
+        }
         .big {
             flex: 2;
         }
     }
     </style>
     <template>
+        <div class="container container-narrow flex relative layout vertical-horizontal center-center">
+            <h4 class="heading flex text self-center text-center">GDG DevFest 2014</h4>             
+        </div>
         <div class="photo-wrapper layout horizontal">
             <div class="flex relative big">
                 <iron-image src="{{photos.big}}" class="placeholder-color fit" sizing="cover" preload fade></iron-image>
                 <div class="open-photos layout vertical center-center fit pointer" on-tap="openGallery">
-                    <span>Click here to view more photos</span>
+                    <!-- <span>Click here to view more photos</span> -->
                 </div>
             </div>
             <div class="flex layout vertical">
                 <div class="flex relative">
                     <iron-image src="{{photos.small.0}}" class="placeholder-color fit" sizing="cover" preload fade></iron-image>
                     <div class="open-photos layout vertical center-center fit pointer" on-tap="openGallery">
-                        <span>Click here to view more photos</span>
+                        <!-- <span>Click here to view more photos</span> -->
                     </div>
                 </div>
                 <div class="flex relative hidden-xs">
                     <iron-image src="{{photos.small.1}}" class="placeholder-color fit" sizing="cover" preload fade></iron-image>
                     <div class="open-photos layout vertical center-center fit pointer" on-tap="openGallery">
-                        <span>Click here to view more photos</span>
+                       <!--  <span>Click here to view more photos</span> -->
                     </div>
                 </div>
             </div>
         </div>
-        <paper-dialog id="photosDialog" class="gallery-dialog fit" entry-animation="scale-up-animation" exit-animation="fade-out-animation">
+       <!--  <paper-dialog id="photosDialog" class="gallery-dialog fit" entry-animation="scale-up-animation" exit-animation="fade-out-animation">
             <paper-toolbar class="navbar-overlay fit">
                 <paper-icon-button icon="icons:arrow-back" on-tap="closeGallery"></paper-icon-button>
                 <div class="title text-left">GDG DevFest Ukraine 2014 - Photos</div>
@@ -76,7 +93,7 @@
             <div class="gallery-container fit">
                 <photo-gallery user-id="104154992083455126443" album-id="6189295328162771457"></photo-gallery>
             </div>
-        </paper-dialog>
+        </paper-dialog> -->
     </template>
 </dom-module>
 <script>
@@ -91,11 +108,11 @@ Polymer({
             small: ['../images/backgrounds/2014_2.jpg', '../images/backgrounds/2014_3.jpg']
         };
     },
-    openGallery: function() {
-        this.$.photosDialog.open();
-    },
-    closeGallery: function() {
-        this.$.photosDialog.close();
-    }
+    // openGallery: function() {
+    //     this.$.photosDialog.open();
+    // },
+    // closeGallery: function() {
+    //     this.$.photosDialog.close();
+    // }
 });
 </script>

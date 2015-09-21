@@ -100,14 +100,14 @@ gulp.task('copy', function () {
   var swBootstrap = gulp.src(['bower_components/platinum-sw/bootstrap/*.js'])
     .pipe(gulp.dest('dist/elements/bootstrap'));
 
-  var swToolbox = gulp.src(['bower_components/sw-toolbox/*.js'])
-    .pipe(gulp.dest('dist/sw-toolbox'));
+  // var swToolbox = gulp.src(['bower_components/sw-toolbox/*.js'])
+  //   .pipe(gulp.dest('dist/sw-toolbox'));
 
   var vulcanized = gulp.src(['app/elements/elements.html'])
     .pipe($.rename('elements.vulcanized.html'))
     .pipe(gulp.dest('dist/elements'));
 
-  return merge(app, bower, elements, vulcanized, swBootstrap, swToolbox)
+  return merge(app, bower, elements, vulcanized, swBootstrap)
     .pipe($.size({title: 'copy'}));
 });
 
@@ -116,12 +116,6 @@ gulp.task('fonts', function () {
   return gulp.src(['app/fonts/**'])
     .pipe(gulp.dest('dist/fonts'))
     .pipe($.size({title: 'fonts'}));
-});
-
-gulp.task('2014', function () {
-  return gulp.src(['app/2014/**'])
-    .pipe(gulp.dest('dist/2014'))
-    .pipe($.size({title: '2014'}));
 });
 
 gulp.task('assets', function () {
@@ -136,11 +130,6 @@ gulp.task('data', function () {
     .pipe($.size({title: 'data'}));
 });
 
-gulp.task('posts', function () {
-  return gulp.src(['app/posts/**'])
-    .pipe(gulp.dest('dist/posts'))
-    .pipe($.size({title: 'posts'}));
-});
 
 // Scan Your HTML For Assets & Optimize Them
 gulp.task('html', function () {
@@ -185,19 +174,19 @@ gulp.task('vulcanize', function () {
 
 // Generate a list of files that should be precached when serving from 'dist'.
 // The list will be consumed by the <platinum-sw-cache> element.
-gulp.task('precache', function (callback) {
-  var dir = 'dist';
+// gulp.task('precache', function (callback) {
+//   var dir = 'dist';
 
-  glob('{elements,scripts,styles}/**/*.*', {cwd: dir}, function(error, files) {
-    if (error) {
-      callback(error);
-    } else {
-      files.push('index.html', './', 'bower_components/webcomponentsjs/webcomponents-lite.min.js');
-      var filePath = path.join(dir, 'precache.json');
-      fs.writeFile(filePath, JSON.stringify(files), callback);
-    }
-  });
-});
+//   glob('{elements,scripts,styles}/**/*.*', {cwd: dir}, function(error, files) {
+//     if (error) {
+//       callback(error);
+//     } else {
+//       files.push('index.html', './', 'bower_components/webcomponentsjs/webcomponents-lite.min.js');
+//       var filePath = path.join(dir, 'precache.json');
+//       fs.writeFile(filePath, JSON.stringify(files), callback);
+//     }
+//   });
+// });
 
 gulp.task('gh-pages', function() {
   return gulp.src('./dist/**/*')
@@ -271,15 +260,15 @@ gulp.task('default', ['clean'], function (cb) {
     ['copy', 'styles'],
     'elements',
     ['jshint', 'images', 'fonts', 'html'],
-    'vulcanize', 'precache', '2014', 'assets', 'data', 'posts',
+    'vulcanize', 'assets', 'data',
     cb);
 });
 
 // Deploy on GitHub
-gulp.task('deploy', ['default'], function (cb) {
-  runSequence('gh-pages',
-    cb);
-});
+// gulp.task('deploy', ['default'], function (cb) {
+//   runSequence('gh-pages',
+//     cb);
+// });
 
 // Load tasks for web-component-tester
 // Adds tasks for `gulp test:local` and `gulp test:remote`

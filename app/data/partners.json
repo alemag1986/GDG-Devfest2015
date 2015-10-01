@@ -4,16 +4,7 @@
         "logos": [{
             "name": "Google",
             "url": "https://www.google.com/intl/es/about/",
-            "logoUrl": "../images/partners/google.svg"
-        }]
-    },
-    {
-        "title": "Apoyan",
-        "logos": [{
-            "name": "Antel",
-            "url": "https://www.antel.com.uy/antel/",
-            "logoUrl": "../images/partners/logo-antel.jpg"
+            "logoUrl": "images/partners/google.svg"
         }]
     }
-
 ]

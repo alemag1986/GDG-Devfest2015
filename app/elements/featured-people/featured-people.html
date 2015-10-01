@@ -70,11 +70,22 @@
                     </div>
                 </template>
             </div>
-            <div>
+            <div class="flex wrap layout horizontal people-wraper">
+                <template is="dom-repeat" items="[[people2)]" as="person">
+                    <div class="fe-people two-column-xs">
+                        <iron-image src="[[person.photoUrl]]" class="fe-people-img placeholder-color img-circle" preload fade sizing="cover"></iron-image>
+                        <h4 class="fe-people-name">
+                            <span>[[person.name]]</span>
+                        </h4>
+                        <span class="fe-people-company">[[person.company]]</span>
+                    </div>
+                </template>
+            </div>
+           <!--  <div>
                 <a data-route="speakers" href="#!/speakers" class="block-link">
                     <paper-button>View all speakers</paper-button>
                 </a>
-            </div>
+            </div> -->
         </div>
     </template>
 </dom-module>
@@ -86,7 +97,8 @@
             source: String
         },
         peopleLoaded: function(event, response) {
-            this.people = this.randomOrder(response.response).slice(0, 4);
+            this.people = response.response.slice(0,3);
+            this.people2 = response.response.slice(3,5);
         },
         randomOrder: function(array) {
             return array.sort(function() {

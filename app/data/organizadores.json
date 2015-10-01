@@ -1,0 +1,21 @@
+[{
+    "id": 1,
+    "name": "Gabriel Kouyoumdjian",
+    "twitter": "@gabrielkou",
+    "photoUrl": "images/people/gabrielk.jpg"
+}, {
+    "id": 2,
+    "name": "Nicolás Bianchi Falco",
+    "twitter": "@nicobf",
+    "photoUrl": "images/people/nicob.jpg"
+}, {
+    "id": 3,
+    "name": "Martín Peruchena",
+    "twitter": "@tinoper",
+    "photoUrl": "images/people/tinoper.jpg"
+}, {
+    "id": 4,
+    "name": "Alejandro Magnani",
+    "twitter": "@alemag1986",
+    "photoUrl": "images/people/alem.jpg"
+}]

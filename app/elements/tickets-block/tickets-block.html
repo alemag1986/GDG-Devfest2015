@@ -65,56 +65,21 @@
         <div id="pricetable" class="container wrap relative layout vertical text-center">
             <h4 class="heading">Tickets</h4>
             <div class="price-block-wrapper flex layout vertical-horizontal">
-               <!--  <div class="price-block flex text-center">
-                    <span class="ticket-name block">Estudiante</span>
-                    <span class="price">15</span>
-                    <span class="currency">US$</span>
-                    <span class="additional-info block">Antes del 30 de Setiembre o primeros 50 tickets.
-                        <br/>Requiere carnet o comprobante de estudiante.</span>
-                </div> -->
                 <div class="price-block flex text-center">
-                    <span class="ticket-name block">Ticket</span>
-                    <span class="price">LIBRE</span>
-                    <!-- <span class="currency">US$</span> -->
-                    <span class="additional-info block">Tenes tiempo de registrarte hasta el 15 de Octubre.</span>
+                    <span class="ticket-name block">Entrada</span>
+                    <span class="price">Gratuita</span>
+                    <span class="additional-info block">Sólo tenes que registrarte!</span>
                 </div>
-                <!-- <div class="price-block flex text-center">
-                    <span class="ticket-name block">Lazy Ticket</span>
-                    <span class="price">30</span>
-                    <span class="currency">US$</span>
-                    <span class="additional-info block">*Después del 30 de Setiembre</span>
-                </div> -->
             </div>
             <span class="details">El Ticket garantiza el accesso a todas las charlas de la conferencia y los coffee breaks. </span>
             <div class="flex">
-                <paper-button class="white border-button open-dialog-button" on-tap="openTicketsDialog">Registrate</paper-button>
+            <a href="http://www.eventbrite.com/e/gdg-devfest-2015-montevideo-tickets-18742190396" target="_blank"> <paper-button class="white border-button open-dialog-button" on-tap="openTicketsDialog">Registrate</paper-button></a>
             </div>
         </div>
-        <!-- <paper-dialog id="ticketsDialog" entry-animation="scale-up-animation" exit-animation="fade-out-animation" modal>
-                <div id="2event_tickets_widget" style="width: 640px; height: 300px; background:#fff;"></div>
-            <div class="buttons">
-                <a href="#" target="_blank">
-                    <paper-button>Buy on the website</paper-button>
-                </a>
-                <paper-button dialog-confirm>Close</paper-button>
-            </div>
-        </paper-dialog> -->
     </template>
 </dom-module>
 <script>
-    /* jshint ignore:start */
-    // var widgetOptions = {
-    //     bg_color: 'ffffff',
-    //     id: 312113,
-    //     lang: 'en'
-    // };
-    /* jshint ignore:end */
-
     Polymer({
         is: 'tickets-block',
-        // openTicketsDialog: function() {
-        //     ga('send', 'buy-a-ticket', 'button', 'click'); // jshint ignore:line
-        //     this.$.ticketsDialog.open();
-        // }
     });
 </script>

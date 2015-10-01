@@ -37,27 +37,27 @@
         //     document.querySelector('#blog').closePost();
         // });
 
-        page('/speakers', function() {
-            trackPageview('/speakers');
-            app.route = 'speakers';
-        });
+        // page('/speakers', function() {
+        //     trackPageview('/speakers');
+        //     app.route = 'speakers';
+        // });
 
-        page('/speakers/:id', function(data) {
-            trackPageview('/speakers/' + data.params.id);
-            app.route = 'speakers';
-            app.params = data.params;
-            app.scrollToTop();
-        });
+        // page('/speakers/:id', function(data) {
+        //     trackPageview('/speakers/' + data.params.id);
+        //     app.route = 'speakers';
+        //     app.params = data.params;
+        //     app.scrollToTop();
+        // });
 
-        page.exit('/speakers/:id', function() {
-            document.querySelector('#people-block').closePerson();
-        });
+        // page.exit('/speakers/:id', function() {
+        //     document.querySelector('#people-block').closePerson();
+        // });
 
-        page('/contact', function() {
-            trackPageview('/contact');
-            app.route = 'contact';
-            app.scrollToTop();
-        });
+        // page('/contact', function() {
+        //     trackPageview('/contact');
+        //     app.route = 'contact';
+        //     app.scrollToTop();
+        // });
 
         // page('/code-of-conduct', function() {
         //     trackPageview('/code-of-conduct');

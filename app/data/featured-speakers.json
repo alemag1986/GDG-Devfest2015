@@ -1,7 +1,7 @@
 [{
     "id": 1,
     "name": "Matias Molinas",
-    "company": "GDG Santa Fe, GDE",
+    "company": "GDG Santa Fe, Google Developer Expert",
     "photoUrl": "images/people/matiasmolina.jpg"
 }, {
     "id": 2,
@@ -11,13 +11,13 @@
 }, {
     "id": 3,
     "name": "Jonatan Ariste",
-    "company": "GDG Buenos Aires, GDE",
+    "company": "GDG Buenos Aires",
     "photoUrl": "images/people/jonatanari.jpeg"
 }, {
     "id": 4,
     "name": "Nicolas Barrera",
     "company": "Application Designer & Front end Developer",
-    "photoUrl": "images/people/nicolasbarrera.jpeg"
+    "photoUrl": "images/people/nicolasbarrera.jpg"
 }, {
     "id": 5,
     "name": "Jojo Giuffra",

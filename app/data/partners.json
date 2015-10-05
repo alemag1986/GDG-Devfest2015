@@ -6,5 +6,26 @@
             "url": "https://www.google.com/intl/es/about/",
             "logoUrl": "images/partners/google.svg"
         }]
+    },
+    {
+        "title": "Blue Sponsors",
+        "logos": [{
+            "name": "ANII",
+            "url": "https://http://www.anii.org.uy/",
+            "logoUrl": "images/partners/anii.png"
+        },
+        {
+            "name": "PedidosYa",
+            "url": "http://www.pedidosya.com/",
+            "logoUrl": "images/partners/pedidosya.svg"
+        }]
+    },
+    {
+        "title": "Apoyan en la comunicación",
+        "logos": [{
+            "name": "Universidad ORT Uruguay",
+            "url": "https://www.ort.edu.uy",
+            "logoUrl": "images/partners/ort.png"
+        }]
     }
 ]

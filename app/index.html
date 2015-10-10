@@ -57,11 +57,15 @@
 </head>
 
 <body id="body" unresolved class="fullbleed layout vertical">
+    
     <span id="browser-sync-binding"></span>
    
     <template is="dom-bind" id="app">
+
         <paper-drawer-panel id="paperDrawerPanel" force-narrow>
+            
             <paper-header-panel drawer class="drawer" mode="seamed">
+                
                 <paper-toolbar class="tall">
                     <div class="top">
                         <img class="logo" src="images/logo-white.svg" alt="GDG DevFest 2015">
@@ -75,76 +79,75 @@
                         </span>
                     </div>
                 </paper-toolbar>
+                
                 <paper-menu class="list" attr-for-selected="data-route" selected="{{route}}" on-iron-select="onMenuSelect">
-                    <a data-route="#!/home" href="/">Home</a><!-- 
-                    <a data-route="#!/speakers" href="/speakers">Oradores</a> -->
+                    <a data-route="#!/home" href="/">Home</a>
                 </paper-menu>
+
             </paper-header-panel>
+            
             <div class="scroll" main>
                
-
-                <!-- Main Content -->
                 <div class="content">
-               <!--      <iron-pages attr-for-selected="data-route" selected="{{route}}">
-                        
-                        <section data-route="home">
-                -->             
-                            <hero-block class="section-shadow" hide-logo route="{{route}}">
-                                <div class="top-section hero">
-                                    <div class="layout vertical-horizontal">
-                                        <div class="flex center-content-xs">
-                                            <img class="logo" src="images/logo.svg" alt="GDG DevFest 2015">
-                                            <p class="dates bold">Octubre 16, Montevideo</p>
-                                            <p class="description">La mayor conferencia de tecnologías Google en Uruguay organizada por la comunidad local GDG! Todo sobre Android, Web y Cloud por expertos regionales. </p>
-                                            <p class="slogan">Ponele código a tus ideas!</p>
-                                            <div class="links layout horizontal align-pb-block">
-                                                <a href="mailto:info@gdg.uy">
-                                                    <paper-button noink>
-                                                        Postulate como Orador
-                                                    </paper-button>
-                                                </a>
-                                                <a href="#pricetable">
-                                                    <paper-button class="colorful" raised>
-                                                        Registrate
-                                                    </paper-button>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="flex relative right-section">
-                                            <iron-image class="fit" src="images/mvd.png" sizing="contain"></iron-image>
-                                        </div>
+               
+                    <hero-block class="section-shadow" hide-logo route="{{route}}">
+                        <div class="top-section hero">
+                            <div class="layout vertical-horizontal">
+                                <div class="flex center-content-xs">
+                                    <img class="logo" src="images/logo.svg" alt="GDG DevFest 2015">
+                                    <p class="dates bold">Octubre 16, Montevideo</p>
+                                    <p class="description">La mayor conferencia de tecnologías Google en Uruguay organizada por la comunidad local GDG! Todo sobre Android, Web y Cloud por expertos regionales. </p>
+                                    <p class="slogan">Ponele código a tus ideas!</p>
+                                    <div class="links layout horizontal align-pb-block">
+                                        <a href="mailto:info@gdg.uy">
+                                            <paper-button noink>
+                                                Postulate como Orador
+                                            </paper-button>
+                                        </a>
+                                        <a href="#pricetable">
+                                            <paper-button class="colorful" raised>
+                                                Registrate
+                                            </paper-button>
+                                        </a>
                                     </div>
                                 </div>
-                                <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=GDG%20DevFest%20Uruguay%202015&dates=20151016T133000/20151016T193000&details=The%20biggest%20Google%20related%20event%20in%20Uruguay%20carefully%20crafted%20for%20you%20by%20GDG%20community!%20Awesome%20speakers%20and%20lot's%20of%20fun!%20Details%20at%20http://devfest.uy/&location=Guatemala%201075,%20Montevideo,%20Uruguay&pli=1&uid=&sf=true&output=xml#eventpage_6"
-                                target="_blank" onclick="ga('send', 'add-event-to-calendar', 'button', 'click');">
-                                    <paper-fab class="section-fab-right" icon="icons:event"></paper-fab>
-                                </a>
-                            </hero-block>
-                            
-                            <statistics-block></statistics-block>
+                                <div class="flex relative right-section">
+                                    <iron-image class="fit" src="images/mvd.png" sizing="contain"></iron-image>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=GDG%20DevFest%20Uruguay%202015&dates=20151016T133000/20151016T193000&details=The%20biggest%20Google%20related%20event%20in%20Uruguay%20carefully%20crafted%20for%20you%20by%20GDG%20community!%20Awesome%20speakers%20and%20lot's%20of%20fun!%20Details%20at%20http://devfest.uy/&location=Guatemala%201075,%20Montevideo,%20Uruguay&pli=1&uid=&sf=true&output=xml#eventpage_6"
+                        target="_blank" onclick="ga('send', 'add-event-to-calendar', 'button', 'click');">
+                            <paper-fab class="section-fab-right" icon="icons:event"></paper-fab>
+                        </a>
+                    </hero-block>
+                    
+                    <statistics-block></statistics-block>
 
-                            <featured-people source="data/featured-speakers.json">
-                                <h4 class="heading">Oradores</h4>
-                            </featured-people>
-                            
-                            <photo-block></photo-block>
-    
-                            <tickets-block></tickets-block>
+                    <featured-people source="data/featured-speakers.json">
+                        <h4 class="heading">Oradores</h4>
+                    </featured-people>
 
-                            <map-block></map-block>
-                            
-                            <logos-block source="data/partners.json">
-                                <h4 class="heading">Partners</h4>
-                            </logos-block>
-                            
-                            <people-organizers source="data/organizadores.json">
-                                <h4 class="heading">GDG Uruguay - Organizadores</h4>
-                            </people-organizers>
-                            
-                            <footer-block></footer-block>
-                       <!--  </section>
-                        
-                    </iron-pages> -->
+                    <schedule-block source="data/schedule.json"></schedule-block>
+                    
+                    <streaming-block></streaming-block>
+
+                    <photo-block></photo-block>
+
+                    <tickets-block></tickets-block>
+
+                    <map-block></map-block>
+                    
+                    <logos-block source="data/partners.json">
+                        <h4 class="heading">Partners</h4>
+                    </logos-block>
+                    
+                    <people-organizers source="data/organizadores.json">
+                        <h4 class="heading">GDG Uruguay - Organizadores</h4>
+                    </people-organizers>
+                    
+                    <footer-block></footer-block>
+                
                 </div>
             </div>
         </paper-drawer-panel>
@@ -153,11 +156,9 @@
     </template>
    
 
-    <!-- <google-analytics code="UA-43643469-1"></google-analytics> -->
-    <!-- build:js scripts/app.js -->
-
+    <google-analytics code="UA-68657187-1"></google-analytics>
     <script src="scripts/app.js"></script>
-    <!-- endbuild-->
+    
 </body>
 
 </html>

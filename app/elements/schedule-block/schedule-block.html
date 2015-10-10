@@ -1,0 +1,117 @@
+<dom-module id="schedule-block">
+
+    <template>
+        <style>
+            :host {
+                display: block;
+                background: var(--default-primary-color);
+                color: #fff;
+            }
+
+            .container {
+                padding-bottom: 30px;
+            }
+
+            .people-wraper {
+                margin-top: 40px;
+            }
+
+            .fe-people-img {
+                height: 70px;
+                width: 70px;
+            }
+
+            .fe-people {
+                font-weight: 100;
+            }
+
+            @media (max-width: 767px) {
+                .fe-people:nth-child(1),
+                .fe-people:nth-child(2) {
+                    margin-bottom: 40px;
+                }
+            }
+
+            @media (min-width: 768px) {
+                .fe-people-img {
+                    height: 120px;
+                    width: 120px;
+                }
+            }
+
+            .fe-people-name {
+                margin-top: 5px;
+                padding: 0 16px;
+                line-height: .9;
+            }
+
+            .fe-people-company {
+                padding: 0 16px;
+                display: block;
+                font-size: .7em;
+                line-height: 1.8;
+            }
+
+            .block-link {
+                margin-top: 25px;
+                display: block;
+                color: inherit;
+                font-size: .9em;
+            }
+
+            .ui-card {
+                width: 100%;    
+                color:#000;
+                font-weight: 100;
+            }
+            .card-actions {
+                padding: 1%;
+            }
+            .spaker {
+                font-weight: bold;
+                float: left;
+            }
+            .presentation {
+            
+            }
+            .event-date {
+                font-weight: 100;
+                text-align: left;
+            }
+        </style>
+        
+        <iron-ajax auto url="[[source]]" handle-as="json" on-response="scheduleLoaded"></iron-ajax>
+        
+        <div class="container text-center">
+            <h4 class="heading">Agenda</h4>
+            <p>Agenda tentativa sujeta a cambios.</p>
+        
+            <template is="dom-repeat" items="[[events)]" as="event">
+                <div class="flex wrap layout horizontal people-wraper">
+
+                    <paper-card class="ui-card">
+                        <div class="card-content event-date">[[event.time]]</div>
+                        <div class="card-actions">
+                            <p class="speaker" style="float:left; font-weight:400; padding-left:5%">[[event.speaker]]</p> 
+                            <p class="presentation">[[event.title]]</p>
+                        </div>
+                    </paper-card>
+                </div>
+            </template>
+        </div>
+    
+    </template>
+
+</dom-module>
+
+<script>
+    Polymer({
+        is: 'schedule-block',
+        properties: {
+            source: String
+        },
+        scheduleLoaded: function(event, response) { 
+            this.events = response.response;
+        }
+    });
+</script>

@@ -17,7 +17,17 @@
         {
             "name": "PedidosYa",
             "url": "http://www.pedidosya.com/",
-            "logoUrl": "images/partners/pedidosya.svg"
+            "logoUrl": "images/partners/pedidosya.png"
+        },
+        {
+            "name": "Agesic",
+            "url": "http://www.agesic.gub.uy/",
+            "logoUrl": "images/partners/agesic.jpg"
+        },
+        {
+            "name": "Genexus",
+            "url": "http://www.genexus.com/",
+            "logoUrl": "images/partners/genexus.png"
         }]
     },
     {
@@ -26,6 +36,10 @@
             "name": "Universidad ORT Uruguay",
             "url": "https://www.ort.edu.uy",
             "logoUrl": "images/partners/ort.png"
+        },{
+            "name": "MontevideoCOMM",
+            "url": "https://www.montevideo.com.uy",
+            "logoUrl": "images/partners/mvdcomm.jpg"
         }]
     }
 ]

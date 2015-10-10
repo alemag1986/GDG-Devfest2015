@@ -1,0 +1,42 @@
+[{
+    "id": 1,
+    "time": "Octubre 16, 2:00 PM",
+    "speaker": "Nick Bortolotti",
+    "title": "Keynote - Los 7 arquetipos de la tecnología moderna"
+},
+{
+    "id": 2,
+    "time": "Octubre 16, 3:00 PM",
+    "speaker": "Nicolás Barrera",
+    "title": "Material Design Lite"
+},
+{
+    "id": 3,
+    "time": "Octubre 16, 4:10 PM",
+    "speaker": "Jonatan Ariste",
+    "title": "Lean UX/Angular JS"
+},
+{
+    "id": 4,
+    "time": "Octubre 16, 4:50 PM",
+    "speaker": "Jojo Giufra",
+    "title": "Estrategias Digitales para Incrementar tus Ventas Online"
+},
+{
+    "id": 5,
+    "time": "Octubre 16, 6:00 PM",
+    "speaker": "Lighting talks",
+    "title": "Adwords API, Appengine PHP, y más!"
+},
+{
+    "id": 6,
+    "time": "Octubre 16, 6:20 PM",
+    "speaker": "Matías Molina",
+    "title": "Buenas practicas de desarrollo en Android"
+},
+{
+    "id": 7,
+    "time": "Workshops",
+    "speaker": "A confirmar",
+    "title": "Contando historias con sensores"
+}]

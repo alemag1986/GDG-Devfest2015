@@ -1,42 +1,97 @@
 [{
-    "id": 1,
-    "time": "Octubre 16, 2:00 PM",
-    "speaker": "Nick Bortolotti",
-    "title": "Keynote - Los 7 arquetipos de la tecnología moderna"
+    "name": "Keynote",
+    "agenda": [{
+            "id": 1,
+            "time": "14:00 - 15:00",
+            "speaker": "Nick Bortolotti",
+            "title": "Los 7 Arquetipos de la Tecnología Moderna"
+        }
+    ]
 },
 {
-    "id": 2,
-    "time": "Octubre 16, 3:00 PM",
-    "speaker": "Nicolás Barrera",
-    "title": "Material Design Lite"
+    "name": "Track 1",
+    "agenda": [
+        {
+            "id": 2,
+            "time": "15:00 - 15:40",
+            "speaker": "Nicolás Barrera",
+            "title": "Material Design Lite"
+        },
+        {
+            "id": 0,
+            "time": "",
+            "speaker": "",
+            "title": "Coffee Break"  
+        },
+        {
+            "id": 3,
+            "time": "16:10 - 16:50",
+            "speaker": "Jonatan Ariste",
+            "title": "Lean UX/Angular JS"
+        },
+        {
+            "id": 4,
+            "time": "16:50 - 17:30",
+            "speaker": "Jojo Giufra",
+            "title": "Estratégias Digitáles para Incrementar tus Ventas Online"
+        },
+        {
+            "id": 0,
+            "time": "",
+            "speaker": "",
+            "title": "Coffee Break"  
+        },
+        {
+            "id": 5,
+            "time": "18:00  - 18:40",
+            "speaker": "Luis Calabria",
+            "title": "Experiencias Envolventes: Google Cardboard Ready!"
+        },
+        {
+            "id": 6,
+            "time": "18:40 - 19:20",
+            "speaker": "Matías Molinas",
+            "title": "Buenas Prácticas de Desarrollo en Android"
+        },
+        {
+            "id": 11,
+            "time": "19:20 - 19:30",
+            "speaker": "GDG Uruguay",
+            "title": "Cierre DevFest 2015"
+        }
+    ]
 },
 {
-    "id": 3,
-    "time": "Octubre 16, 4:10 PM",
-    "speaker": "Jonatan Ariste",
-    "title": "Lean UX/Angular JS"
-},
-{
-    "id": 4,
-    "time": "Octubre 16, 4:50 PM",
-    "speaker": "Jojo Giufra",
-    "title": "Estrategias Digitales para Incrementar tus Ventas Online"
-},
-{
-    "id": 5,
-    "time": "Octubre 16, 6:00 PM",
-    "speaker": "Lighting talks",
-    "title": "Adwords API, Appengine PHP, y más!"
-},
-{
-    "id": 6,
-    "time": "Octubre 16, 6:20 PM",
-    "speaker": "Matías Molina",
-    "title": "Buenas practicas de desarrollo en Android"
-},
-{
-    "id": 7,
-    "time": "Workshops",
-    "speaker": "A confirmar",
-    "title": "Contando historias con sensores"
+    "name": "Track 2",
+    "agenda": [{
+            "id": 7,
+            "time": "15:00 - 16:50",
+            "speaker": "Martin Rebaglia",
+            "title": "Workshop: Como Armar Buenas Experiencias IoT"
+        },
+        {
+            "id": 8,
+            "time": "16:50 - 17:30",
+            "speaker": "Ivan Kechichian",
+            "title": "Cloud Computing - Oportunidades en la nueva era de la Computación Corporativa"
+        },
+        {
+            "id": 0,
+            "time": "",
+            "speaker": "",
+            "title": "Coffee Break"    
+        },
+        {
+            "id": 9,
+            "time": "18:00 - 18:40",
+            "speaker": "Gabriel Simonet ",
+            "title": "Be different!"
+        },
+        {
+            "id": 10,
+            "time": "18:40 - 19:20",
+            "speaker": "Ignacio Bazzano",
+            "title": "Google Analytics API"
+        }
+    ]
 }]

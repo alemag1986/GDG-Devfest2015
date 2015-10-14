@@ -60,33 +60,19 @@
         
         <div class="container text-center">
             <content></content>
-            <div class="flex wrap layout horizontal people-wraper">
-                <template is="dom-repeat" items="[[people)]" as="person">
-                    <div class="fe-people two-column-xs">
-                        <iron-image src="[[person.photoUrl]]" class="fe-people-img placeholder-color img-circle" preload fade sizing="cover"></iron-image>
-                        <h4 class="fe-people-name">
-                            <span>[[person.name]]</span>
-                        </h4>
-                        <span class="fe-people-company">[[person.company]]</span>
-                    </div>
-                </template>
-            </div>
-            <div class="flex wrap layout horizontal people-wraper">
-                <template is="dom-repeat" items="[[people2)]" as="person">
-                    <div class="fe-people two-column-xs">
-                        <iron-image src="[[person.photoUrl]]" class="fe-people-img placeholder-color img-circle" preload fade sizing="cover"></iron-image>
-                        <h4 class="fe-people-name">
-                            <span>[[person.name]]</span>
-                        </h4>
-                        <span class="fe-people-company">[[person.company]]</span>
-                    </div>
-                </template>
-            </div>
-           <!--  <div>
-                <a data-route="speakers" href="#!/speakers" class="block-link">
-                    <paper-button>View all speakers</paper-button>
-                </a>
-            </div> -->
+            <template is="dom-repeat" items="{{groups}}" as="people">
+                <div class="flex wrap layout horizontal people-wraper">
+                    <template is="dom-repeat" items="{{people}}" as="person">
+                        <div class="fe-people two-column-xs">
+                            <iron-image src="{{person.photoUrl}}" class="fe-people-img placeholder-color img-circle" preload fade sizing="cover"></iron-image>
+                            <h4 class="fe-people-name">
+                                <span>{{person.name}}</span>
+                            </h4>
+                            <span class="fe-people-company">{{person.company}}</span>
+                        </div>
+                    </template>
+                </div>
+            </template>
         </div>
     </template>
 </dom-module>
@@ -97,14 +83,8 @@
         properties: {
             source: String
         },
-        peopleLoaded: function(event, response) {
-            this.people = response.response.slice(0,3);
-            this.people2 = response.response.slice(3,5);
-        },
-        randomOrder: function(array) {
-            return array.sort(function() {
-                return 0.5 - Math.random();
-            });
+        peopleLoaded: function(event, response) {   
+            this.groups = [ response.response.slice(0,4), response.response.slice(4,8), response.response.slice(8,10)];
         }
     });
 </script>

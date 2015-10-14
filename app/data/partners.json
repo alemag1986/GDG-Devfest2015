@@ -25,6 +25,18 @@
             "logoUrl": "images/partners/agesic.jpg"
         },
         {
+            "name": "Portlike",
+            "url": "http://www.portlike.com/",
+            "logoUrl": "images/partners/portlike.svg"
+        }]
+    },
+    {
+        "title": "Colaboran",
+        "logos": [{
+            "name": "Blue Sapphire",
+            "url": "http://bluesse.co/",
+            "logoUrl": "images/partners/bluesse.svg"
+        },{
             "name": "Genexus",
             "url": "http://www.genexus.com/",
             "logoUrl": "images/partners/genexus.png"

@@ -6,7 +6,7 @@
 }, {
     "id": 2,
     "name": "Nicolas Bortolotti",
-    "company": "Google, Program Manager",
+    "company": "Program Manager Google",
     "photoUrl": "images/people/nicolasberto.jpg"
 }, {
     "id": 3,
@@ -16,11 +16,36 @@
 }, {
     "id": 4,
     "name": "Nicolas Barrera",
-    "company": "Application Designer & Front end Developer",
+    "company": "App Designer & Front-end Developer",
     "photoUrl": "images/people/nicolasbarrera.jpg"
 }, {
     "id": 5,
     "name": "Jojo Giuffra",
     "company": "Marketing Digital",
     "photoUrl": "images/people/jojogiuffra.jpg"
+},{
+    "id": 6,
+    "name": "Luis Calabria",
+    "company": "Co-Founder SimDesign",
+    "photoUrl": "images/people/luis.jpg"
+}, {
+    "id": 7,
+    "name": "Martín Rebaglia",
+    "company": "GDG Buenos Aires",
+    "photoUrl": "images/people/martinreba.png"
+}, {
+    "id": 8,
+    "name": "Ivan Kechichian",
+    "company": "CEO Blue Sapphire",
+    "photoUrl": "images/people/ivan.jpg"
+}, {
+    "id": 9,
+    "name": "Gabriel Simonet ",
+    "company": "Genexus",
+    "photoUrl": "images/people/simonet.jpg"
+}, {
+    "id": 10,
+    "name": "Ignacio Bazzano",
+    "company": "CTO Portlike y Takeoff Media",
+    "photoUrl": "images/people/bazzano.jpg"
 }]
